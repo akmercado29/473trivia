@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/collection/eachRight.js
+import forEachRight from './forEachRight'
+export default forEachRight;

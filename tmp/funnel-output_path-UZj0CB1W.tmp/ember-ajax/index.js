@@ -1,1 +1,1 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-NHwZm6BP.tmp/index.js
+export { default } from './request';

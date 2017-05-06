@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/reEvaluate.js
+/** Used to match template delimiters. */
+var reEvaluate = /<%([\s\S]+?)%>/g;
+
+export default reEvaluate;

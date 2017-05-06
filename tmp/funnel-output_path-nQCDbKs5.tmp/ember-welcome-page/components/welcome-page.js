@@ -1,1 +1,12 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-Ic1DbDTS.tmp/components/welcome-page.js
+import Ember from 'ember';
+import layout from '../templates/components/welcome-page';
+
+export default Ember.Component.extend({
+  layout,
+
+  emberVersion: Ember.computed(function() {
+    let [ major, minor ] = Ember.VERSION.split(".");
+
+    return `${major}.${minor}.0`;
+  })
+});

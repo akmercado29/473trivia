@@ -1,1 +1,14 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-pLDgalAO.tmp/0/helpers/destroy-firebase-apps.js
+import Ember from 'ember';
+import firebase from 'firebase';
+
+const { run } = Ember;
+
+/**
+ * Destroy all Firebase apps.
+ */
+export default function destroyFirebaseApps() {
+  const deletions = firebase.apps.map((app) => app.delete());
+  Ember.RSVP.all(deletions).then(() => run(() => {
+    // NOOP to delay run loop until the apps are destroyed
+  }));
+}

@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/collection/max.js
+import max from '../math/max'
+export default max;

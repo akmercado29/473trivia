@@ -1,1 +1,10 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/baseLodash.js
+/**
+ * The function whose prototype all chaining wrappers inherit from.
+ *
+ * @private
+ */
+function baseLodash() {
+  // No operation performed.
+}
+
+export default baseLodash;

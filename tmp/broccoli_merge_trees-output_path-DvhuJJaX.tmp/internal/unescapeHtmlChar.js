@@ -1,1 +1,22 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/unescapeHtmlChar.js
+/** Used to map HTML entities to characters. */
+var htmlUnescapes = {
+  '&amp;': '&',
+  '&lt;': '<',
+  '&gt;': '>',
+  '&quot;': '"',
+  '&#39;': "'",
+  '&#96;': '`'
+};
+
+/**
+ * Used by `_.unescape` to convert HTML entities to characters.
+ *
+ * @private
+ * @param {string} chr The matched character to unescape.
+ * @returns {string} Returns the unescaped character.
+ */
+function unescapeHtmlChar(chr) {
+  return htmlUnescapes[chr];
+}
+
+export default unescapeHtmlChar;

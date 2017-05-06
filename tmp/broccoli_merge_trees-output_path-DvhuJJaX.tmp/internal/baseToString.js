@@ -1,1 +1,13 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/baseToString.js
+/**
+ * Converts `value` to a string if it's not one. An empty string is returned
+ * for `null` or `undefined` values.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */
+function baseToString(value) {
+  return value == null ? '' : (value + '');
+}
+
+export default baseToString;

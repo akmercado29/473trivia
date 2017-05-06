@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/realNames.js
+/** Used to lookup unminified function names. */
+var realNames = {};
+
+export default realNames;

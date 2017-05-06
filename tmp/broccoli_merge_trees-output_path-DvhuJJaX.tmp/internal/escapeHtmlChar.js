@@ -1,1 +1,22 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/escapeHtmlChar.js
+/** Used to map characters to HTML entities. */
+var htmlEscapes = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+  '`': '&#96;'
+};
+
+/**
+ * Used by `_.escape` to convert characters to HTML entities.
+ *
+ * @private
+ * @param {string} chr The matched character to escape.
+ * @returns {string} Returns the escaped character.
+ */
+function escapeHtmlChar(chr) {
+  return htmlEscapes[chr];
+}
+
+export default escapeHtmlChar;

@@ -1,1 +1,9 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qPiLyeOq.tmp/0/qunit.js
+/* globals QUnit */
+
+export var module = QUnit.module;
+export var test = QUnit.test;
+export var skip = QUnit.skip;
+export var only = QUnit.only;
+export var todo = QUnit.todo;
+
+export default QUnit;

@@ -1,1 +1,10 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/system/references/reference.js
+var Reference = function(store, internalModel) {
+  this.store = store;
+  this.internalModel = internalModel;
+};
+
+Reference.prototype = {
+  constructor: Reference
+};
+
+export default Reference;

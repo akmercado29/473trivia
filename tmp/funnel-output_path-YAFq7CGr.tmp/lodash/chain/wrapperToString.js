@@ -1,1 +1,17 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/chain/wrapperToString.js
+/**
+ * Produces the result of coercing the unwrapped value to a string.
+ *
+ * @name toString
+ * @memberOf _
+ * @category Chain
+ * @returns {string} Returns the coerced string value.
+ * @example
+ *
+ * _([1, 2, 3]).toString();
+ * // => '1,2,3'
+ */
+function wrapperToString() {
+  return (this.value() + '');
+}
+
+export default wrapperToString;

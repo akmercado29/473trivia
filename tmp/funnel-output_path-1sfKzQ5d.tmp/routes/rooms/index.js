@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-SBYvuJsU.tmp/routes/rooms/index.js
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+});

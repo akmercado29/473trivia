@@ -1,1 +1,16 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-1srhEIv5.tmp/1/qunit.js
+define("qunit", ["exports"], function (exports) {
+  /* globals QUnit */
+
+  var _module = QUnit.module;
+  exports.module = _module;
+  var test = QUnit.test;
+  exports.test = test;
+  var skip = QUnit.skip;
+  exports.skip = skip;
+  var only = QUnit.only;
+  exports.only = only;
+  var todo = QUnit.todo;
+
+  exports.todo = todo;
+  exports["default"] = QUnit;
+});

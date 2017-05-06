@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/1/index.js
+import lodash from './lodash';
+
+export default lodash;

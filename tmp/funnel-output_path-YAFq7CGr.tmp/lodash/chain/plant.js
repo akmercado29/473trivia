@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/chain/plant.js
+import wrapperPlant from './wrapperPlant'
+export default wrapperPlant;

@@ -1,1 +1,1 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-63qPajpd.tmp/8/components/radio-button.js
+export { default } from 'ember-radio-buttons/components/radio-button';

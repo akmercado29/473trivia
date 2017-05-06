@@ -1,1 +1,7 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/config_replace-output_path-LrO8uoLv.tmp/test-support-suffix.js
+runningTests = true;
+
+if (window.Testem) {
+  window.Testem.hookIntoTestFramework();
+}
+
+

@@ -1,1 +1,24 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-NHwZm6BP.tmp/utils/get-header.js
+import Ember from 'ember';
+
+const { A, isNone } = Ember;
+
+/**
+ * Do a case-insensitive lookup of an HTTP header
+ *
+ * @function getHeader
+ * @private
+ * @param {Object} headers
+ * @param {string} name
+ * @return {string}
+ */
+export default function getHeader(headers, name) {
+  if (isNone(headers) || isNone(name)) {
+    return; // ask for nothing, get nothing.
+  }
+
+  const matchedKey = A(Object.keys(headers)).find((key) => {
+    return key.toLowerCase() === name.toLowerCase();
+  });
+
+  return headers[matchedKey];
+}

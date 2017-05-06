@@ -1,1 +1,42 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-NHwZm6BP.tmp/mixins/ajax-support.js
+import Ember from 'ember';
+
+const {
+  Mixin,
+  inject: { service },
+  computed: { alias }
+} = Ember;
+
+export default Mixin.create({
+
+  /**
+   * The AJAX service to send requests through
+   *
+   * @property {AjaxService} ajaxService
+   * @public
+   */
+  ajaxService: service('ajax'),
+
+  /**
+   * @property {string} host
+   * @public
+   */
+  host: alias('ajaxService.host'),
+
+  /**
+   * @property {string} namespace
+   * @public
+   */
+  namespace: alias('ajaxService.namespace'),
+
+  /**
+   * @property {object} headers
+   * @public
+   */
+  headers: alias('ajaxService.headers'),
+
+  ajax(url, type, options = {}) {
+    let augmentedOptions = this.ajaxOptions(...arguments);
+
+    return this.get('ajaxService').request(url, augmentedOptions);
+  }
+});

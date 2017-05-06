@@ -1,1 +1,8 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-A5Ee3R9f.tmp/components/fa-list.js
+import Ember from 'ember';
+import layout from '../templates/components/fa-list';
+
+export default Ember.Component.extend({
+  layout,
+  tagName:    'ul',
+  classNames: 'fa-ul'
+});

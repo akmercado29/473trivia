@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-hfSHuhLa.tmp/utils/regexp.js
+export const versionRegExp = /\d[.]\d[.]\d/;
+export const shaRegExp = /[a-z\d]{8}/;

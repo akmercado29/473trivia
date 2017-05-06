@@ -1,1 +1,11 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-pLDgalAO.tmp/1/helpers/resolver.js
+import Resolver from '../../resolver';
+import config from '../../config/environment';
+
+const resolver = Resolver.create();
+
+resolver.namespace = {
+  modulePrefix: config.modulePrefix,
+  podModulePrefix: config.podModulePrefix
+};
+
+export default resolver;

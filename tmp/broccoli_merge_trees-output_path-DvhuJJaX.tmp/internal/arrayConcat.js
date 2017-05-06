@@ -1,1 +1,25 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/arrayConcat.js
+/**
+ * Creates a new array joining `array` with `other`.
+ *
+ * @private
+ * @param {Array} array The array to join.
+ * @param {Array} other The other array to join.
+ * @returns {Array} Returns the new concatenated array.
+ */
+function arrayConcat(array, other) {
+  var index = -1,
+      length = array.length,
+      othIndex = -1,
+      othLength = other.length,
+      result = Array(length + othLength);
+
+  while (++index < length) {
+    result[index] = array[index];
+  }
+  while (++othIndex < othLength) {
+    result[index++] = other[othIndex];
+  }
+  return result;
+}
+
+export default arrayConcat;

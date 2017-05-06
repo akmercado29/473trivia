@@ -1,1 +1,22 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qPiLyeOq.tmp/1/ember-test-helpers.js
+import Ember from 'ember';
+import TestModule from 'ember-test-helpers/test-module';
+import TestModuleForAcceptance from 'ember-test-helpers/test-module-for-acceptance';
+import TestModuleForIntegration from 'ember-test-helpers/test-module-for-integration';
+import TestModuleForComponent from 'ember-test-helpers/test-module-for-component';
+import TestModuleForModel from 'ember-test-helpers/test-module-for-model';
+import { getContext, setContext, unsetContext } from 'ember-test-helpers/test-context';
+import { setResolver } from 'ember-test-helpers/test-resolver';
+
+Ember.testing = true;
+
+export {
+  TestModule,
+  TestModuleForAcceptance,
+  TestModuleForIntegration,
+  TestModuleForComponent,
+  TestModuleForModel,
+  getContext,
+  setContext,
+  unsetContext,
+  setResolver
+};

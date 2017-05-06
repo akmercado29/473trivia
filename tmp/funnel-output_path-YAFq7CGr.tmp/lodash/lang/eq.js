@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/lang/eq.js
+import isEqual from './isEqual'
+export default isEqual;

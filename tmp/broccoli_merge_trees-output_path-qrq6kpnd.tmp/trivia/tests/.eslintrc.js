@@ -1,1 +1,7 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-RntLbgp2.tmp/0/trivia/tests/.eslintrc.js
+define("trivia/tests/.eslintrc", ["exports"], function (exports) {
+  module.exports = {
+    env: {
+      embertest: true
+    }
+  };
+});

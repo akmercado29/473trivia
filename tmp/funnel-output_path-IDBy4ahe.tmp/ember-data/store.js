@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/ember-data/addon/store.js
+import Store from "./-private/system/store";
+
+export default Store;

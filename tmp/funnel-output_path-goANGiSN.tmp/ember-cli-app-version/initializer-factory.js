@@ -1,1 +1,18 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-hfSHuhLa.tmp/initializer-factory.js
+import Ember from 'ember';
+
+const { 
+  String: { classify },
+  libraries
+} = Ember;
+
+export default function initializerFactory(name, version) {
+  let registered = false;
+
+  return function() {
+    if (!registered && name && version) {
+      var appName = classify(name);
+      libraries.register(appName, version);
+      registered = true;
+    }
+  };
+}

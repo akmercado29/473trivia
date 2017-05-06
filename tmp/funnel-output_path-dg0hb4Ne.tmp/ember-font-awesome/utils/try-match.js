@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-A5Ee3R9f.tmp/utils/try-match.js
+export default function(object, regex) {
+  return (typeof object) === 'string' && object.match(regex);
+}

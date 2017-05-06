@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/realNames.js
+/** Used to lookup unminified function names. */
+var realNames = {};
+
+export default realNames;

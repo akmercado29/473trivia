@@ -1,1 +1,14 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-63qPajpd.tmp/2/initializers/app-version.js
+import initializerFactory from 'ember-cli-app-version/initializer-factory';
+import config from '../config/environment';
+
+const {
+  APP: {
+    name,
+    version
+  }
+} = config;
+
+export default {
+  name: 'App Version',
+  initialize: initializerFactory(name, version)
+};

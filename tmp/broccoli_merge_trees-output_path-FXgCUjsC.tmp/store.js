@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-RAAkcvYu.tmp/1/store.js
+import Store from "./-private/system/store";
+
+export default Store;

@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/config_replace-output_path-LrO8uoLv.tmp/vendor-prefix.js
+window.EmberENV = {"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false}};
+var runningTests = false;
+
+

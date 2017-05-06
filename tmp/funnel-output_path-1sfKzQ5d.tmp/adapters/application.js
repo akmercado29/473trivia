@@ -1,1 +1,8 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-SBYvuJsU.tmp/adapters/application.js
+import Ember from 'ember';
+import FirebaseAdapter from 'emberfire/adapters/firebase';
+
+const { inject } = Ember;
+
+export default FirebaseAdapter.extend({
+  firebase: inject.service(),
+});

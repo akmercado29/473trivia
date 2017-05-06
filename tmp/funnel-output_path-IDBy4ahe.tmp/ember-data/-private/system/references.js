@@ -1,1 +1,5 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/system/references.js
+import RecordReference from './references/record';
+import BelongsToReference from './references/belongs-to';
+import HasManyReference from './references/has-many';
+
+export { RecordReference, BelongsToReference, HasManyReference };

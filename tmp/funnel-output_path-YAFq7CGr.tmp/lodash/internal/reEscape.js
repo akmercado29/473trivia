@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/reEscape.js
+/** Used to match template delimiters. */
+var reEscape = /<%-([\s\S]+?)%>/g;
+
+export default reEscape;

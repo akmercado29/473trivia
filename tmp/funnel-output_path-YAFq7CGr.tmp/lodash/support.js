@@ -1,1 +1,10 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/support.js
+/**
+ * An object environment feature flags.
+ *
+ * @static
+ * @memberOf _
+ * @type Object
+ */
+var support = {};
+
+export default support;

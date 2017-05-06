@@ -1,1 +1,15 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/system/store/serializers.js
+export function serializerForAdapter(store, adapter, modelName) {
+  let serializer = adapter.serializer;
+
+  if (serializer === undefined) {
+    serializer = store.serializerFor(modelName);
+  }
+
+  if (serializer === null || serializer === undefined) {
+    serializer = {
+      extract(store, type, payload) { return payload; }
+    };
+  }
+
+  return serializer;
+}

@@ -1,1 +1,11 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-ReUtChcV.tmp/utils/class-factory.js
+export default function classFactory(klass) {
+  return {
+    create: function (injections) {
+      if (typeof klass.extend === 'function') {
+        return klass.extend(injections);
+      } else {
+        return klass;
+      }
+    }
+  };
+}

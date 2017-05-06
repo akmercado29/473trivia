@@ -1,1 +1,9 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-NHwZm6BP.tmp/utils/ajax.js
+/* global najax */
+import Ember from 'ember';
+import isFastBoot from './is-fastboot';
+
+const {
+  $
+} = Ember;
+
+export default isFastBoot ? najax : $.ajax;

@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-SBYvuJsU.tmp/controllers/players.js
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+});

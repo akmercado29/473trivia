@@ -1,1 +1,26 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-yVtVnEN6.tmp/services/firebase-app.js
+import firebase from 'firebase';
+import Ember from 'ember';
+
+const { getOwner } = Ember;
+
+export default {
+  create(application) {
+    const config = getOwner(application).resolveRegistration('config:environment');
+    if (!config || typeof config.firebase !== 'object') {
+      throw new Error('Please set the `firebase` property in your environment config.');
+    }
+
+    let app;
+
+    try {
+      app = firebase.app();
+    } catch (e) {
+      app = firebase.initializeApp(config.firebase);
+    }
+
+    return app;
+  },
+
+  config: null,
+  isServiceFactory: true
+};

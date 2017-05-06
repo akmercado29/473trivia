@@ -9,8 +9,8 @@ module.exports = function(environment) {
     apiKey: 'apiKey',
     authDomain: '473trivia.firebaseapp.com',
     databaseURL: 'https://trivia-23ed7.firebaseio.com/',
-    storageBucket: '<your-storage-bucket>'
-  },
+    storageBucket: 'trivia-23ed7.appspot.com'
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

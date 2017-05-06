@@ -1,1 +1,8 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-ReUtChcV.tmp/utils/make-dictionary.js
+import create from './create';
+
+export default function makeDictionary() {
+  var cache = create(null);
+  cache['_dict'] = null;
+  delete cache['_dict'];
+  return cache;
+}

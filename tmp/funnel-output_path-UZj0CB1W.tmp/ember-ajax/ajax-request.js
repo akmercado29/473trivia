@@ -1,1 +1,6 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-NHwZm6BP.tmp/ajax-request.js
+import Ember from 'ember';
+import AjaxRequestMixin from './mixins/ajax-request';
+
+const { Object: EmberObject } = Ember;
+
+export default EmberObject.extend(AjaxRequestMixin);

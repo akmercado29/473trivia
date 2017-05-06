@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/public/robots.txt
+# http://www.robotstxt.org
+User-agent: *
+Disallow:

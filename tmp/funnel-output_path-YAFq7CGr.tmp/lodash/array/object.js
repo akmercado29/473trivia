@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/array/object.js
+import zipObject from './zipObject'
+export default zipObject;

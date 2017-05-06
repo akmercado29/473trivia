@@ -1,1 +1,7 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/number.js
+import inRange from './number/inRange';
+import random from './number/random';
+
+export default {
+  'inRange': inRange,
+  'random': random
+};

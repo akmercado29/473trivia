@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/ember-lodash/addon/index.js
+import lodash from './lodash';
+
+export default lodash;

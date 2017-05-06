@@ -1,1 +1,21 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/getMatchData.js
+import isStrictComparable from './isStrictComparable';
+import pairs from '../object/pairs';
+
+/**
+ * Gets the propery names, values, and compare flags of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the match data of `object`.
+ */
+function getMatchData(object) {
+  var result = pairs(object),
+      length = result.length;
+
+  while (length--) {
+    result[length][2] = isStrictComparable(result[length][1]);
+  }
+  return result;
+}
+
+export default getMatchData;

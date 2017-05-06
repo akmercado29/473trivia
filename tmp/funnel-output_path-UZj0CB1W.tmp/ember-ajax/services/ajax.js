@@ -1,1 +1,6 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-NHwZm6BP.tmp/services/ajax.js
+import Ember from 'ember';
+import AjaxRequestMixin from '../mixins/ajax-request';
+
+const { Service } = Ember;
+
+export default Service.extend(AjaxRequestMixin);

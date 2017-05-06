@@ -1,1 +1,11 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4hjfYAlI.tmp/lib/utils/make-helper.js
+import Ember from 'ember';
+
+export default function makeHelper(helperFunction) {
+  if (Ember.Helper) {
+    return Ember.Helper.helper(helperFunction);
+  }
+  if (Ember.HTMLBars) {
+    return Ember.HTMLBars.makeBoundHelper(helperFunction);
+  }
+  return Ember.Handlebars.makeBoundHelper(helperFunction);
+}

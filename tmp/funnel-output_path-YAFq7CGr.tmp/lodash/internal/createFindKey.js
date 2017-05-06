@@ -1,1 +1,18 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/createFindKey.js
+import baseCallback from './baseCallback';
+import baseFind from './baseFind';
+
+/**
+ * Creates a `_.findKey` or `_.findLastKey` function.
+ *
+ * @private
+ * @param {Function} objectFunc The function to iterate over an object.
+ * @returns {Function} Returns the new find function.
+ */
+function createFindKey(objectFunc) {
+  return function(object, predicate, thisArg) {
+    predicate = baseCallback(predicate, thisArg, 3);
+    return baseFind(object, predicate, objectFunc, true);
+  };
+}
+
+export default createFindKey;

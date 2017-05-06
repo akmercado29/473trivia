@@ -1,1 +1,6 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-pLDgalAO.tmp/1/test-helper.js
+import resolver from './helpers/resolver';
+import {
+  setResolver
+} from 'ember-qunit';
+
+setResolver(resolver);

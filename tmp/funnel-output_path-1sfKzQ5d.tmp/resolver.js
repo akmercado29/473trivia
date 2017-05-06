@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-SBYvuJsU.tmp/resolver.js
+import Resolver from 'ember-resolver';
+
+export default Resolver;

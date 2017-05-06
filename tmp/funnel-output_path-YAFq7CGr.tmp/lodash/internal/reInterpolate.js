@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/reInterpolate.js
+/** Used to match template delimiters. */
+var reInterpolate = /<%=([\s\S]+?)%>/g;
+
+export default reInterpolate;

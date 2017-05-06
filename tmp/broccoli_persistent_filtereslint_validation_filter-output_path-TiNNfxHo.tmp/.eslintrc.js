@@ -1,1 +1,5 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_persistent_filtereslint_validation_filter-input_base_path-42nJVlf9.tmp/.eslintrc.js
+module.exports = {
+  env: {
+    embertest: true
+  }
+};

@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-pyYkDcLg.tmp/1/trivia/resolver.js
+define('trivia/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
+  exports['default'] = _emberResolver['default'];
+});

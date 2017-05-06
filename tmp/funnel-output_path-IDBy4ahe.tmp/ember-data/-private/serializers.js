@@ -1,1 +1,13 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/serializers.js
+/**
+  @module ember-data
+*/
+
+import JSONAPISerializer from "ember-data/serializers/json-api";
+import JSONSerializer from "ember-data/serializers/json";
+import RESTSerializer from "ember-data/serializers/rest";
+
+export {
+  JSONAPISerializer,
+  JSONSerializer,
+  RESTSerializer
+};

@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/chain/concat.js
+import wrapperConcat from './wrapperConcat'
+export default wrapperConcat;

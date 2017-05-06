@@ -1,1 +1,5 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/date.js
+import now from './date/now';
+
+export default {
+  'now': now
+};

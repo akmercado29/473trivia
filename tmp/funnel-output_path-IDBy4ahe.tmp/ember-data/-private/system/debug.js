@@ -1,1 +1,7 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/system/debug.js
+/**
+  @module ember-data
+*/
+
+import DebugAdapter from "./debug/debug-adapter";
+
+export default DebugAdapter;

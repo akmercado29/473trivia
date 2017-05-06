@@ -1,1 +1,15 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/mergeDefaults.js
+import merge from '../object/merge';
+
+/**
+ * Used by `_.defaultsDeep` to customize its `_.merge` use.
+ *
+ * @private
+ * @param {*} objectValue The destination object property value.
+ * @param {*} sourceValue The source object property value.
+ * @returns {*} Returns the value to assign to the destination object.
+ */
+function mergeDefaults(objectValue, sourceValue) {
+  return objectValue === undefined ? sourceValue : merge(objectValue, sourceValue, mergeDefaults);
+}
+
+export default mergeDefaults;

@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-RntLbgp2.tmp/0/trivia/tests/test-helper.js
+define('trivia/tests/test-helper', ['exports', 'trivia/tests/helpers/resolver', 'ember-qunit'], function (exports, _triviaTestsHelpersResolver, _emberQunit) {
+
+  (0, _emberQunit.setResolver)(_triviaTestsHelpersResolver['default']);
+});

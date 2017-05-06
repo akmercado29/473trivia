@@ -1,1 +1,10 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-qAkHOx2q.tmp/0/internal/metaMap.js
+import getNative from './getNative';
+import root from './root';
+
+/** Native method references. */
+var WeakMap = getNative(root, 'WeakMap');
+
+/** Used to store function metadata. */
+var metaMap = WeakMap && new WeakMap;
+
+export default metaMap;

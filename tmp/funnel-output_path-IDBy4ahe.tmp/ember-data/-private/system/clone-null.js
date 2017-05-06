@@ -1,1 +1,7 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/system/clone-null.js
+export default function cloneNull(source) {
+  let clone = Object.create(null);
+  for (let key in source) {
+    clone[key] = source[key];
+  }
+  return clone;
+}

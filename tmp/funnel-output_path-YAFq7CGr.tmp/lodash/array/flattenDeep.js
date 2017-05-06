@@ -1,1 +1,21 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/array/flattenDeep.js
+import baseFlatten from '../internal/baseFlatten';
+
+/**
+ * Recursively flattens a nested array.
+ *
+ * @static
+ * @memberOf _
+ * @category Array
+ * @param {Array} array The array to recursively flatten.
+ * @returns {Array} Returns the new flattened array.
+ * @example
+ *
+ * _.flattenDeep([1, [2, 3, [4]]]);
+ * // => [1, 2, 3, 4]
+ */
+function flattenDeep(array) {
+  var length = array ? array.length : 0;
+  return length ? baseFlatten(array, true) : [];
+}
+
+export default flattenDeep;

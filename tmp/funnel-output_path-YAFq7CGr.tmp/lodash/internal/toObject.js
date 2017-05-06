@@ -1,1 +1,14 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/toObject.js
+import isObject from '../lang/isObject';
+
+/**
+ * Converts `value` to an object if it's not one.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {Object} Returns the object.
+ */
+function toObject(value) {
+  return isObject(value) ? value : Object(value);
+}
+
+export default toObject;

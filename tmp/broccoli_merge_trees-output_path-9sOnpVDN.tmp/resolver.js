@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/app/resolver.js
+import Resolver from 'ember-resolver';
+
+export default Resolver;

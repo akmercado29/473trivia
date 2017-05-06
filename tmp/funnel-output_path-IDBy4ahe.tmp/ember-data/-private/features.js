@@ -1,1 +1,5 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/features.js
+import Ember from 'ember';
+
+export default function isEnabled() {
+  return Ember.FEATURES.isEnabled(...arguments);
+}

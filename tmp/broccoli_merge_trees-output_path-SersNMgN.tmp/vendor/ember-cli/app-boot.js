@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/config_replace-output_path-LrO8uoLv.tmp/app-boot.js
+if (!runningTests) {
+  require("trivia/app")["default"].create({"name":"trivia","version":"0.0.0+93ff7256"});
+}

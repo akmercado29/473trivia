@@ -1,1 +1,7 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-SBYvuJsU.tmp/models/player.js
+import DS from 'ember-data';
+
+export default DS.Model.extend({
+  username: DS.attr('string'),
+  firstName: DS.attr('string'),
+  lastName: DS.attr('string')
+});

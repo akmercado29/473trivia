@@ -1,1 +1,11 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/adapters.js
+/**
+  @module ember-data
+*/
+
+import JSONAPIAdapter from "ember-data/adapters/json-api";
+import RESTAdapter from "ember-data/adapters/rest";
+
+export {
+  JSONAPIAdapter,
+  RESTAdapter
+};

@@ -1,1 +1,3 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/ember-data/addon/model.js
+import Model from "./-private/system/model";
+
+export default Model;

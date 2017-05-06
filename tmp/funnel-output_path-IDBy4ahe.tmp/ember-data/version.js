@@ -1,1 +1,1 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/creator-output_path-OsnWwQpm.tmp/version.js
+export default "2.13.0";

@@ -1,1 +1,14 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/baseProperty.js
+/**
+ * The base implementation of `_.property` without support for deep paths.
+ *
+ * @private
+ * @param {string} key The key of the property to get.
+ * @returns {Function} Returns the new function.
+ */
+function baseProperty(key) {
+  return function(object) {
+    return object == null ? undefined : object[key];
+  };
+}
+
+export default baseProperty;

@@ -1,1 +1,2 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-GqFIcIt4.tmp/function/compose.js
+import flowRight from './flowRight'
+export default flowRight;

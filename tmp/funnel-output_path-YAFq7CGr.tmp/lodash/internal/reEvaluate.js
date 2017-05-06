@@ -1,1 +1,4 @@
-/Users/arjen/githubrepositories/473_Game_App/node_modules/lodash-es/internal/reEvaluate.js
+/** Used to match template delimiters. */
+var reEvaluate = /<%([\s\S]+?)%>/g;
+
+export default reEvaluate;

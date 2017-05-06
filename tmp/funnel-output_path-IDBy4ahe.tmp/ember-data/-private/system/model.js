@@ -1,1 +1,16 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4v0Q5eeL.tmp/-private/system/model.js
+/**
+  @module ember-data
+*/
+
+import Model from "./model/model";
+import attr from "../../attr";
+import RootState from "./model/states";
+import Errors from "./model/errors";
+
+export {
+  RootState,
+  attr,
+  Errors
+};
+
+export default Model;

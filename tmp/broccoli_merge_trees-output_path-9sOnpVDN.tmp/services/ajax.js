@@ -1,1 +1,1 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-63qPajpd.tmp/1/services/ajax.js
+export { default } from 'ember-ajax/services/ajax';

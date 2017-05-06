@@ -1,1 +1,16 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-SBYvuJsU.tmp/models/card.js
+import Ember from 'ember';
+import DS from 'ember-data';
+
+export default DS.Model.extend({
+  question: DS.attr('string'),
+  a: DS.attr('string'),
+  b: DS.attr('string'),
+  c: DS.attr('string'),
+  d: DS.attr('string'),
+  answer: DS.attr('string'),
+  // This attribute is computed from other attributes
+  // Returns the text belonging to the letter saved in 'answer'
+  reveal: Ember.computed('answer', function() {
+    return `${this.get(this.get('answer'))}`;
+  })
+});

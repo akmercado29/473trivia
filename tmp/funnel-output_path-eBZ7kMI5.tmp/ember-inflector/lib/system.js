@@ -1,1 +1,15 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4hjfYAlI.tmp/lib/system.js
+import Inflector from "./system/inflector";
+import {
+  pluralize,
+  singularize
+} from "./system/string";
+import defaultRules from "./system/inflections";
+
+Inflector.inflector = new Inflector(defaultRules);
+
+export {
+  Inflector,
+  singularize,
+  pluralize,
+  defaultRules
+};

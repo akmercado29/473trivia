@@ -1,1 +1,8 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/broccoli_merge_trees-input_base_path-pLDgalAO.tmp/0/helpers/unstub-firebase.js
+import firebase from 'firebase';
+
+export default function unstubFirebase() {
+  if (typeof firebase._unStub === 'function') {
+    firebase._unStub();
+    delete firebase._unStub;
+  }
+}

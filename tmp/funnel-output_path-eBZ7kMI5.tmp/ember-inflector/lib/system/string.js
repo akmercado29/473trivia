@@ -1,1 +1,14 @@
-/Users/arjen/githubrepositories/473_Game_App/tmp/funnel-input_base_path-4hjfYAlI.tmp/lib/system/string.js
+import Inflector from './inflector';
+
+function pluralize(word) {
+  return Inflector.inflector.pluralize(word);
+}
+
+function singularize(word) {
+  return Inflector.inflector.singularize(word);
+}
+
+export {
+  pluralize,
+  singularize
+};
