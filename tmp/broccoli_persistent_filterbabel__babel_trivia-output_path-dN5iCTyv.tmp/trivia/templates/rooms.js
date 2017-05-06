@@ -1,0 +1,3 @@
+define("trivia/templates/rooms", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template({ "id": "u1Hv7jiy", "block": "{\"statements\":[[\"open-element\",\"h1\",[]],[\"flush-element\"],[\"text\",\"Rooms\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"append\",[\"unknown\",[\"outlet\"]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "trivia/templates/rooms.hbs" } });
+});

@@ -1,0 +1,1 @@
+/Users/arjen/githubrepositories/473_Game_App/tmp/webpack_writer-output_path-b76MZIL3.tmp/firebase.amd.js
